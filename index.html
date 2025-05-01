@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shantanuraje Nimbalkar - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            padding-top: 56px;
+            background-color: #f0f2f5;
+            color: #2c3e50;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+        .header-section {
+            padding: 80px 15px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+            border-radius: 0 0 40px 40px;
+            box-shadow: 0 4px 15px rgb(102 126 234 / 0.6);
+        }
+        h1.display-4 {
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+            letter-spacing: 0.07em;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        p.lead {
+            font-size: 1.3rem;
+            font-weight: 500;
+            font-style: italic;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.15);
+        }
+        main.container {
+            max-width: 900px;
+        }
+        section {
+            margin-bottom: 60px;
+            background: white;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 4px 16px rgb(0 0 0 / 0.08);
+            transition: box-shadow 0.3s ease;
+        }
+        section:hover {
+            box-shadow: 0 8px 32px rgb(0 0 0 / 0.12);
+        }
+        .section-title {
+            font-weight: 700;
+            color: #4a3c94;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #764ba2;
+            display: inline-block;
+            padding-bottom: 8px;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 15px;
+        }
+        .skills-list li {
+            list-style: none;
+            background: #764ba2;
+            color: white;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 12px 20px;
+            border-radius: 30px;
+            text-shadow: 0 0 3px rgba(0,0,0,0.2);
+            transition: background-color 0.3s ease;
+            cursor: default;
+            min-width: 100px;
+            text-align: center;
+            user-select: none;
+        }
+        .skills-list li:hover {
+            background: #667eea;
+        }
+        .skill-description {
+            margin-top: 12px;
+            font-size: 0.9rem;
+            font-style: italic;
+            color: #555;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #projects .project-item {
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background: #fafafa;
+            box-shadow: 0 2px 8px rgb(0 0 0 / 0.06);
+            transition: box-shadow 0.3s ease;
+        }
+        #projects .project-item:hover {
+            box-shadow: 0 8px 20px rgb(0 0 0 / 0.12);
+        }
+        #projects h3 {
+            color: #5e4a9e;
+            margin-bottom: 8px;
+        }
+        #projects p {
+            color: #444;
+            margin-bottom: 6px;
+        }
+        #projects .tech-stack {
+            font-size: 0.85rem;
+            color: #764ba2;
+            font-weight: 600;
+        }
+        #contact p {
+            text-align: center;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+        .contact-icons {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .contact-icons a {
+            text-decoration: none;
+            color: #764ba2;
+            font-size: 1.8rem;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+        .contact-icons a:hover {
+            color: #667eea;
+        }
+        footer.footer {
+            padding: 20px 0;
+            text-align: center;
+            background-color: #2c3e50;
+            color: white;
+            font-size: 0.9rem;
+            user-select: none;
+            letter-spacing: 0.05em;
+            margin-top: 40px;
+        }
+        nav.navbar-dark {
+            background-color: #5e4a9e !important;
+            box-shadow: 0 2px 8px rgb(118 75 162 / 0.7);
+        }
+        nav.navbar-dark .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+            letter-spacing: 0.1em;
+            color: #f8f9fa;
+            text-shadow: 0 0 3px #312e81;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand" href="#">Shantanuraje Nimbalkar</a>
+  </div>
+</nav>
+
+<header class="header-section" role="banner">
+    <div class="container">
+        <h1 class="display-4">Hi, I'm Shantanuraje Nimbalkar</h1>
+        <p class="lead">Passionate developer skilled in Web Development & Programming</p>
+    </div>
+</header>
+
+<main class="container my-5" role="main" aria-label="Portfolio main content">
+    <section id="about-me" tabindex="0" aria-label="About Me section">
+        <h2 class="section-title">About Me</h2>
+        <p>Hello! I am Shantanuraje Nimbalkar, a motivated and detail-oriented developer with a strong foundation in both front-end web technologies and programming languages. I am passionate about crafting clean and efficient code to build responsive and user-friendly web applications.</p>
+        <p>I have extensive knowledge and hands-on experience with HTML, CSS, Bootstrap, and JavaScript for frontend development. Additionally, I have proficiency in the C programming language, and a solid understanding of database management systems including MySQL and PostgreSQL.</p>
+        <p>My goal is to continuously enhance my skills and contribute to impactful projects while exploring new technologies and best practices.</p>
+    </section>
+
+    <section id="skills" tabindex="0" aria-label="Skills section">
+        <h2 class="section-title">My Skills</h2>
+        <ul class="skills-list" aria-label="List of technical skills">
+            <li title="HyperText Markup Language - the standard markup language for web pages.">HTML</li>
+            <li title="Cascading Style Sheets - for designing and customizing web page appearance.">CSS</li>
+            <li title="Bootstrap - a modern CSS framework for responsive and mobile-first websites.">Bootstrap</li>
+            <li title="JavaScript - versatile programming language for client-side scripting and interactivity.">JavaScript</li>
+            <li title="C Language - powerful low-level programming language useful for algorithms and system programming.">C Language</li>
+            <li title="DBMS - understanding of database concepts and relational database design.">DBMS</li>
+            <li title="MySQL - relational database system for managing structured data.">MySQL</li>
+            <li title="PostgreSQL - advanced open-source relational database known for robustness.">PSQL</li>
+        </ul>
+        <p class="skill-description">I build responsive websites with modern UI using HTML, CSS, and Bootstrap. Javascript enables me to add dynamic features. For backend data management, I am skilled in SQL databases like MySQL and PostgreSQL. With knowledge of C, I have a solid programming foundation that helps me write efficient algorithms.</p>
+    </section>
+
+    <section id="projects" tabindex="0" aria-label="Projects section">
+        <h2 class="section-title">Projects</h2>
+
+        <article class="project-item" aria-label="Project: Responsive Portfolio Website">
+            <h3>Responsive Portfolio Website</h3>
+            <p>A fully responsive personal portfolio website built using HTML, CSS, Bootstrap, and JavaScript, showcasing projects, skills, and contact info in a clean layout optimized for all devices.</p>
+            <p class="tech-stack"><strong>Tech Stack:</strong> HTML, CSS, Bootstrap, JavaScript</p>
+        </article>
+
+        <article class="project-item" aria-label="Project: C Language Data Structures">
+            <h3>Library Management System</h3>
+            <p> Console-based program that allows users to manage book records, member details, issue/return operations, and search functionality using file handling and structures.</p>
+            <p class="tech-stack"><strong>Tech Stack:</strong> C Language</p>
+        </article>
+
+        <article class="project-item" aria-label="Project: SQL Database Management">
+            <h3>SQL Database Management</h3>
+            <p>Designed and managed relational databases using MySQL and PostgreSQL for sample applications, demonstrated efficient queries, indexing, and schema normalization.</p>
+            <p class="tech-stack"><strong>Tech Stack:</strong> MySQL, PostgreSQL, DBMS Concepts</p>
+        </article>
+
+        <p style="text-align: center; font-style: italic; color: #555;">More projects coming soon...</p>
+    </section>
+
+    <section id="contact" tabindex="0" aria-label="Contact section">
+        <h2 class="section-title">Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to reach out via any of the following platforms or methods. I'm open to discussing projects, collaborations, or any opportunities.</p>
+        <p style="text-align:center; font-weight: 600;">Email: <a href="mailto:shantanuraje68@gmail.com" style="color:#764ba2; text-decoration: none;">shantanuraje68@gmail.com</a></p>
+        <div class="contact-icons" role="list" aria-label="Contact social media and communication links">
+            <a href="tel:+918010602892" role="listitem" aria-label="Call me"><i class="bi bi-telephone-fill"></i></a>
+            <a href="sms:+918010602892" role="listitem" aria-label="Send me a message"><i class="bi bi-chat-dots-fill"></i></a>
+            <a href="https://www.instagram.com/shantanuraje_96?igsh=eng0b2pnYmVmZzJ1" target="_blank" rel="noopener" role="listitem" aria-label="Instagram profile"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/shantanuraje-nimbalkar-163a4135a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener" role="listitem" aria-label="LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+            <a href="https://internshala.com/student/resume?detail_source=resume_direct" target="_blank" rel="noopener" role="listitem" aria-label="Internshala profile">
+                <img src="https://internshala.com/static/images/common/new_internshala_logo.svg" alt="Internshala Logo" style="width:28px; height:auto; vertical-align:middle; filter: invert(35%) sepia(81%) saturate(626%) hue-rotate(205deg) brightness(94%) contrast(85%);" />
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer class="footer" role="contentinfo">
+    &copy; 2024 Shantanuraje Nimbalkar. All rights reserved.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+```
+
